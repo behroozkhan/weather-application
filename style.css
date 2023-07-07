@@ -41,7 +41,6 @@ body {
   padding: 20px;
   border-radius: 35px;
   border: 1px solid #717377;
-  position: relative;
   align-self: center;
   box-shadow: 10px 5px 15px rgba(113, 115, 119, 0.5);
 }
@@ -59,7 +58,6 @@ body {
 }
 
 .search {
-  width: 250px;
   height: 40px;
   padding: 8px;
   font-size: 1rem;
@@ -69,6 +67,7 @@ body {
 }
 
 .submit {
+  width: 100%;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -88,18 +87,20 @@ body {
 }
 
 .heading {
-  padding: 10px;
-  margin-top: 2em;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
-  gap: 4px;
   text-align: center;
 }
 
 .heading #city {
-  font-size: 3.4375rem;
+  font-size: 3rem;
+}
+.heading #country {
+  font-size: 1rem;
+  margin-left: 1em;
 }
 
 .heading #date {
@@ -120,8 +121,7 @@ body {
 }
 
 .weather-temp-img .temprature {
-  height: 80px;
-  font-size: 5.15625rem;
+  font-size: 5rem;
   margin-bottom: 3px;
 }
 
@@ -204,6 +204,40 @@ body {
 }
 
 /* Responsive styles */
+@media (max-width: 800px) {
+  .weather-container {
+    max-width: 500px;
+    height: auto;
+  }
+  
+  .heading #city {
+    font-size: 3rem;
+  }
+  
+  .weather-temp-img .temprature {
+    height: 70px;
+    font-size: 4.6875rem;
+  }
+  
+  .weather-info {
+    margin-left: 15px;
+  }
+  
+  #humidity-svg,
+  #cloud-svg,
+  #wind-svg {
+    width: 35px;
+    height: 32px;
+  }
+  .search {
+    display: flex;
+  }
+  
+  .submit {
+    width: auto;
+    border-radius: 0px 10px 0px 0px;
+  }
+}
 
 @media (max-width: 768px) {
   .weather-container {
@@ -232,32 +266,6 @@ body {
     height: 27px;
   }
 }
-@media (max-width: 800px) {
-  .weather-container {
-    max-width: 500px;
-    height: auto;
-  }
-
-  .heading #city {
-    font-size: 3rem;
-  }
-
-  .weather-temp-img .temprature {
-    height: 70px;
-    font-size: 4.6875rem;
-  }
-
-  .weather-info {
-    margin-left: 15px;
-  }
-
-  #humidity-svg,
-  #cloud-svg,
-  #wind-svg {
-    width: 35px;
-    height: 32px;
-  }
-}
 @media (max-width: 480px) {
   .weather-container {
     max-width: 300px;
@@ -275,7 +283,7 @@ body {
   
   .weather-info {
     margin-left: 5px;
-    margin-top: 4px;
+    /* margin-top: 4px; */
   }
   
   #humidity-svg,
@@ -284,4 +292,10 @@ body {
     width: 25px;
     height: 22px;
   }
+  #wind-svg{
+    display: flex;
+  }
+
 }
+
+
