@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Weather</title>
     <!-- font awesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<!-- custom css style -->
+    <!-- custom css style -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -46,48 +47,48 @@
                 <div class="image">
                     <img src="./images/hamburger.svg" alt="hamburger" id="hamburger-svg">
                 </div>
-                 </div> <!--  END OF toogle div  -->
-                <!-- adding toogle classes -->
-                <div id="menu-content" class="menu-content hidden">
-                    <!-- info for Humidity   -->
-                    <div class="weather-info">
-                        <div>
-                            <img src="images/humidity.png" alt="haze" id="humidity-svg">
-                            <span>Humidity</span>
-                        </div>
-                        <div class="weather-info-value">
-                            <span id="humidity"></span>
-                        </div>
+            </div> <!--  END OF toogle div  -->
+            <!-- adding toogle classes -->
+            <div id="menu-content" class="menu-content hidden">
+                <!-- info for Humidity   -->
+                <div class="weather-info">
+                    <div>
+                        <img src="images/humidity.png" alt="haze" id="humidity-svg">
+                        <span>Humidity</span>
                     </div>
-                    <!-- Info For cloud  -->
-                    <div class="weather-info">
-                        <div>
-                            <img src="images/clouds.png" alt="cloud" class="weather-info-img" id="cloud-svg">
-                            <span>cloud</span>
-                        </div>
-                        <div class="weather-info-value">
-                            <span id="cloud"></span>
-                        </div>
+                    <div class="weather-info-value">
+                        <span id="humidity"></span>
                     </div>
+                </div>
+                <!-- Info For cloud  -->
+                <div class="weather-info">
+                    <div>
+                        <img src="images/clouds.png" alt="cloud" class="weather-info-img" id="cloud-svg">
+                        <span>cloud</span>
+                    </div>
+                    <div class="weather-info-value">
+                        <span id="cloud"></span>
+                    </div>
+                </div>
 
-                    <!-- info For Wind -->
-                    <div class="weather-info center">
-                        <div>
-                            <img src="images/wind-speed.png" alt="wind" class="weather-info-img" id="wind-svg">
-                            <span>Wind</span>
-                        </div>
-                        <div class="weather-info-value">
-                            <span id="wind"></span>
-                        </div>
+                <!-- info For Wind -->
+                <div class="weather-info center">
+                    <div>
+                        <img src="images/wind-speed.png" alt="wind" class="weather-info-img" id="wind-svg">
+                        <span>Wind</span>
                     </div>
-                </div><!-- End Of adding toogle classes -->
+                    <div class="weather-info-value">
+                        <span id="wind"></span>
+                    </div>
+                </div>
+            </div><!-- End Of adding toogle classes -->
         </div>
     </div>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
-    integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
 </body>
 
